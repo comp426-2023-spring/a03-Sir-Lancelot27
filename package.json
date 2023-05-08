@@ -1,0 +1,18 @@
+{
+  "name": "node-rpsls",
+  "version": "1.0.0",
+  "description": "Rock paper scissors and variants",
+  "main": "./lib/rpsls.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sir-Lancelot27",
+  "license": "SEE LICENSE IN LICENSE",
+  "bin": {
+    "node-rps": "./bin/rps-cli.js",
+    "node-rpsls": "rpsls-cli.js"
+  },
+  "dependencies": {
+    "minimist": "^1.2.8"
+  }
+}
