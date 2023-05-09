@@ -61,9 +61,7 @@ if ( output instanceof Error) {
         - Paper COVERS Rock
         - Rock CRUSHES Scissors`
     );
-    process.exit(1);
 }   
 else {
-    console.log(JSON.stringify(rps(shot)));
-    process.exit(0);
+    console.log(JSON.stringify(output));
 }

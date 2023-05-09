@@ -75,9 +75,7 @@ if ( output instanceof Error) {
         - Spock VAPORIZES Rock
         - Rock CRUSHES Scissors`
     );
-    process.exit(1);
 }   
 else {
-    console.log(JSON.stringify(rpsls(shot)));
-    process.exit(0);
+    console.log(JSON.stringify(output));
 }
