@@ -63,5 +63,5 @@ if ( output instanceof Error) {
     );
 }   
 else {
-    console.log(JSON.stringify(rps(shot))) 
+    console.log(JSON.stringify(output)) 
 }
