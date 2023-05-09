@@ -64,6 +64,6 @@ if ( output instanceof Error) {
     process.exit(1);
 }   
 else {
-    console.log(JSON.stringify(output));
+    console.log(JSON.stringify(rps(shot)));
     process.exit(0);
 }
