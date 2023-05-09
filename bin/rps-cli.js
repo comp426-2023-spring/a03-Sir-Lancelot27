@@ -39,7 +39,7 @@ if(args.r || args.rules) {
 let shot = args._[0];
 
 let output = rps(shot);
-// If it outputted an error return help and rule statements
+// If it outputted a range error return help and rule statements
 if ( output instanceof Error) {
     console.log(
         `Usage: node-rps [SHOT]
