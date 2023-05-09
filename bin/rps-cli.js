@@ -34,3 +34,34 @@ if(args.r || args.rules) {
     );
 	process.exit(0);
 }
+
+// Need _ for arguments without option associated with them
+let shot = args._[0];
+
+let output = rps(shot);
+// If it outputted an error return help and rule statements
+if ( output instanceof Error) {
+    console.log(
+        `Usage: node-rps [SHOT]
+        Play Rock Paper Scissors (RPS)
+        
+          -h, --help      display this help message and exit
+          -r, --rules     display the rules and exit
+        
+        Examples:
+          node-rps        Return JSON with single player RPS result.
+                          e.g. {"player":"rock"}
+          node-rps rock   Return JSON with results for RPS played against a simulated opponent.
+                          e.g {"player":"rock","opponent":"scissors","result":"win"}`
+    );
+    console.log(
+        `Rules for Rock Paper Scissors:
+
+        - Scissors CUTS Paper
+        - Paper COVERS Rock
+        - Rock CRUSHES Scissors`
+    );
+}   
+else {
+    console.log(JSON.stringify(rps(shot))) 
+}
